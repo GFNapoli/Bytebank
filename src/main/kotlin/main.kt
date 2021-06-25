@@ -34,5 +34,22 @@ fun main(args: Array<String>) {
     }else{
         println("Acesso negado")
     }
+    println()
+
+    val thay = Analista("Thay", "444.444.444-44", 6000.0)
+
+    println("Nome: ${thay.nome}")
+    println("Cpf: ${thay.cpf}")
+    println("Salario: $${thay.salario}")
+    println("Bonificação: $${thay.bonificacao()}")
+    println()
+
+    val calculadoraDeBonificacao = CalculadoraDeBonificacao()
+    calculadoraDeBonificacao.registra(cassao)
+    calculadoraDeBonificacao.registra(lucas)
+    calculadoraDeBonificacao.registra(jp)
+    calculadoraDeBonificacao.registra(thay)
+    println("Total bonificação: $${calculadoraDeBonificacao.totalBonificacao}")
+
 }
 
