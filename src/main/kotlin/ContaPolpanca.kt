@@ -5,4 +5,9 @@ class ContaPolpanca(
     titular,
     numeroConta
 ) {
+    override fun saque(valor: Double) {
+        if(this.saldo > valor){
+            this.saldo -= valor
+        }
+    }
 }

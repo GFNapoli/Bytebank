@@ -1,5 +1,5 @@
 fun testaFuncionario() {
-    val cassao = Funcionario("Cassao", "111.111.111-11", 1000.0)
+    val cassao = Analista("Cassao", "111.111.111-11", 1000.0)
 
     println("Nome: ${cassao.nome}")
     println("Cpf: ${cassao.cpf}")

@@ -1,7 +1,7 @@
 fun testaComportamentoConta() {
-    var contaAlex = Conta(numeroConta = 10, titular = "Alex")
+    var contaAlex = ContaCorrente(numeroConta = 10, titular = "Alex")
     contaAlex.deposita(200.0)
-    var contaFran = Conta("Fran", 11)
+    var contaFran = ContaPolpanca("Fran", 11)
     contaFran.deposita(800.0)
     println(contaAlex.titular)
     println(contaAlex.numeroConta)
