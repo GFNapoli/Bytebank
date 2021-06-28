@@ -7,14 +7,4 @@ abstract class Conta(val titular: String, val numeroConta: Int){
     }
 
     abstract fun saque(valor:Double)
-
-    fun transferencia(conta: Conta, valor:Double): Boolean{
-        return if(this.saldo > valor) {
-            this.saldo -= valor
-            conta.deposita(valor)
-            true
-        }else{
-            false
-        }
-    }
 }
