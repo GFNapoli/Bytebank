@@ -1,5 +1,7 @@
-fun main(args: Array<String>) {
+fun main() {
     println("Bem vindo ao Bytebank")
+
+    testaAutenticacao()
 
 }
 
