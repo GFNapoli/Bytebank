@@ -1,7 +1,7 @@
 package br.com.alura.bytebank.modelos
 
 class ContaPolpanca(
-    titular: String,
+    titular: Cliente,
     numeroConta: Int
 ): ContaTransferivel(
     titular,

@@ -1,7 +1,7 @@
 package br.com.alura.bytebank.modelos
 
 class ContaSalario(
-    titular: String,
+    titular: Cliente,
     numeroConta: Int
 ): Conta(
     titular,

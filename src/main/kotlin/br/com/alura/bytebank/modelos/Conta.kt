@@ -1,6 +1,6 @@
 package br.com.alura.bytebank.modelos
 
-abstract class Conta(val titular: String, val numeroConta: Int){
+abstract class Conta(val titular: Cliente, val numeroConta: Int){
     var saldo = 0.0
     protected set
 
