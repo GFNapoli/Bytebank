@@ -1,3 +1,5 @@
+package br.com.alura.bytebank.modelos
+
 class ContaPolpanca(
     titular: String,
     numeroConta: Int

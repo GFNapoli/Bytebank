@@ -1,3 +1,5 @@
+package br.com.alura.bytebank.modelos
+
 class Auxiliar(
     nome: String,
     cpf: String,

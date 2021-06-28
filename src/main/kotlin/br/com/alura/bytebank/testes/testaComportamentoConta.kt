@@ -1,3 +1,6 @@
+import br.com.alura.bytebank.modelos.ContaCorrente
+import br.com.alura.bytebank.modelos.ContaPolpanca
+
 fun testaComportamentoConta() {
     var contaAlex = ContaCorrente(numeroConta = 10, titular = "Alex")
     contaAlex.deposita(200.0)

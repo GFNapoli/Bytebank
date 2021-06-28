@@ -1,3 +1,8 @@
+import br.com.alura.bytebank.modelos.Analista
+import br.com.alura.bytebank.modelos.CalculadoraDeBonificacao
+import br.com.alura.bytebank.modelos.Diretor
+import br.com.alura.bytebank.modelos.Gerente
+
 fun testaFuncionario() {
     val cassao = Analista("Cassao", "111.111.111-11", 1000.0)
 

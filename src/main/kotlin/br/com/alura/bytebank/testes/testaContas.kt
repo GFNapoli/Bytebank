@@ -1,3 +1,6 @@
+import br.com.alura.bytebank.modelos.ContaCorrente
+import br.com.alura.bytebank.modelos.ContaPolpanca
+
 fun testaContas() {
     val contaCorrente = ContaCorrente("Luiza", 123)
     val contaPolpanca = ContaPolpanca("Maria", 456)

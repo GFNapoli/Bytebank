@@ -1,3 +1,5 @@
+package br.com.alura.bytebank.modelos
+
 class SistemaInterno {
 
     fun entrar(admin: Autenticavel, senha: String){

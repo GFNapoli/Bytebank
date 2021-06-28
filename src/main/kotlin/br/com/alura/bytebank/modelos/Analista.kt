@@ -1,3 +1,5 @@
+package br.com.alura.bytebank.modelos
+
 class Analista(
     nome: String,
     cpf: String,

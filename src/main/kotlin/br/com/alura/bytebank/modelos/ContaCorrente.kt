@@ -1,3 +1,5 @@
+package br.com.alura.bytebank.modelos
+
 class ContaCorrente(
     titular: String,
     numeroConta: Int

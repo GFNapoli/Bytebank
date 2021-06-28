@@ -1,3 +1,5 @@
+package br.com.alura.bytebank.modelos
+
 class Cliente(
     val nome: String,
     val cpf: String,
