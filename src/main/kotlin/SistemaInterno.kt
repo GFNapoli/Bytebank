@@ -1,7 +1,7 @@
 class SistemaInterno {
 
-    fun entrar(admin: FuncionarioAdmin, senha: String){
-        if(admin.atenticacao(senha)){
+    fun entrar(admin: Autenticavel, senha: String){
+        if(admin.autenticacao(senha)){
             println("Bem vindo ao Bytebank")
         }else println("Acesso não autorizado!")
     }

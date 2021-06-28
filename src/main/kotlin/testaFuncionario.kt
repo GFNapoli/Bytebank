@@ -13,7 +13,7 @@ fun testaFuncionario() {
     println("Cpf: ${lucas.cpf}")
     println("Salario: $${lucas.salario}")
     println("Bonificação: $${lucas.bonificacao()}")
-    if (lucas.atenticacao("1234")) {
+    if (lucas.autenticacao("1234")) {
         println("Acesso consedido")
     } else {
         println("Acesso negado")
@@ -27,7 +27,7 @@ fun testaFuncionario() {
     println("Salario: $${jp.salario}")
     println("Bonificação: $${jp.bonificacao()}")
     println("Plr: ${jp.plr}")
-    if (jp.atenticacao("4321")) {
+    if (jp.autenticacao("4321")) {
         println("Acesso consedido")
     } else {
         println("Acesso negado")

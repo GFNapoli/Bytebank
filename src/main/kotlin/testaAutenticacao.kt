@@ -7,4 +7,5 @@ fun testaAutenticacao() {
 
     sistema.entrar(gerente, "1234")
     sistema.entrar(diretor, "4567")
+    sistema.entrar(cliente, "9876")
 }
