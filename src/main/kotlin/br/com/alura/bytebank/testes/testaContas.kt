@@ -1,4 +1,5 @@
 import br.com.alura.bytebank.modelos.Cliente
+import br.com.alura.bytebank.modelos.Conta
 import br.com.alura.bytebank.modelos.ContaCorrente
 import br.com.alura.bytebank.modelos.ContaPolpanca
 
@@ -27,4 +28,6 @@ fun testaContas() {
     println("Saldo ${contaCorrente.titular.nome} é $${contaCorrente.saldo}")
     println("Saldo ${contaPolpanca.titular.nome} é $${contaPolpanca.saldo}")
     println()
+
+    println("Numero de contas criadas ${Conta.total}")
 }
