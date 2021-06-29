@@ -1,6 +1,9 @@
+import br.com.alura.bytebank.exception.ErroNaAutenticacaoException
+import br.com.alura.bytebank.exception.SaldoInsuficienteException
 import br.com.alura.bytebank.modelos.Cliente
 import br.com.alura.bytebank.modelos.ContaCorrente
 import br.com.alura.bytebank.modelos.ContaPolpanca
+import java.lang.Exception
 
 fun testaComportamentoConta() {
     val alex = Cliente("Alex", "666.666.666-66", senha = "12")
@@ -28,10 +31,21 @@ fun testaComportamentoConta() {
     println(contaFran.saldo)
     println()
 
-    if (contaFran.transferencia(contaAlex, 100.0)) {
+    try {
+        contaFran.transferencia(contaAlex, 100.0, "21")
         println("Transferencia bem sucedida")
-    } else {
+    }catch (e: SaldoInsuficienteException){
         println("transferencia não executada")
+        println(e.message)
+        e.printStackTrace()
+    }catch (e: ErroNaAutenticacaoException){
+        println("Senha Invalida")
+        println(e.message)
+        e.printStackTrace()
+    }catch (e: Exception){
+        println("Erro desconhecido")
+        println(e.message)
+        e.printStackTrace()
     }
     println(contaAlex.saldo)
     println(contaFran.saldo)

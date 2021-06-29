@@ -23,7 +23,7 @@ fun testaContas() {
     println("Saldo ${contaPolpanca.titular.nome} é $${contaPolpanca.saldo}")
     println()
 
-    contaCorrente.transferencia(contaPolpanca, 1500.0)
+    contaCorrente.transferencia(contaPolpanca, 1500.0, "56")
     println("Saldo depois da transferencia")
     println("Saldo ${contaCorrente.titular.nome} é $${contaCorrente.saldo}")
     println("Saldo ${contaPolpanca.titular.nome} é $${contaPolpanca.saldo}")
